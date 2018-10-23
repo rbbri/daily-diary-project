@@ -4,10 +4,14 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
-gem 'rspec'
+group :test do
+  gem 'rspec'
+  gem 'capybara' 
+end
+
+
 gem 'simplecov'
-gem 'capybara'
+
 gem 'rubocop'
 gem 'sinatra'
 gem 'pg'
