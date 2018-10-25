@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './spec/support/database_helper'
 
 class DailyDiary < Sinatra::Base
   get '/' do
