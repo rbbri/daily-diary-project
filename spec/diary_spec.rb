@@ -7,9 +7,7 @@ describe Diary do
     double :entry,
            id: '1',
            title: 'Test entry',
-           body: 'I hope this works',
-           comment: nil,
-           tag: nil
+           body: 'I hope this works'
   end
   describe '.all' do
       it 'returns a list of entries' do

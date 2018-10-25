@@ -1,6 +1,6 @@
 require './lib/database_connection'
 if ENV['ENVIRONMENT'] == 'test'
-  DatabaseConnection.setup('Diary_test')
+  DatabaseConnection.setup('diary_test')
 else
-  DatabaseConnection.setup('Diary')
+  DatabaseConnection.setup('diary')
 end

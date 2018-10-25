@@ -6,13 +6,8 @@ class Diary
   attr_accessor :db
 
   def self.insert(entry)
-    DatabaseConnection.query("INSERT INTO entries (title, body, comment, tag)
-      VALUES (
-        '#{entry.title}',
-        '#{entry.body}',
-        '#{entry.comment}',
-        '#{entry.tag}')
-      ;")
+    DatabaseConnection.query("INSERT INTO entries (title, body)
+      VALUES ('#{entry.title}', '#{entry.body}');")
   end
 
   def self.all
