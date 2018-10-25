@@ -11,3 +11,15 @@ feature 'User Story 1' do
     expect(page).to have_field 'body'
   end
 end
+
+# So that I can identify my entry in future
+# I want to give each Diary Entry a title
+feature 'User Story 2' do
+  scenario 'a user adds a new entry with a title' do
+    visit '/'
+    click_button 'Add Entry'
+    fill_in 'title', with: 'Test entry'
+    fill_in 'body', with: 'I hope this works'
+    click_button 'Submit'
+  end
+end
